@@ -3,46 +3,42 @@
 <head>
   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>SSW 2019 average prosody</title>
+  <title>FAIR 2019 Neural Speech Synthesis for Resource-Scarce Languages</title>
 </head>
 <body>
 
-<h1>Using generative modelling to produce varied intonation for speech synthesis</h1>
-<p>The following speech samples relate to a paper submitted for review at the <a href=http://ssw10.oeaw.ac.at>Speech Synthesis Workshop 2019</a></p>
+<h1>Neural Speech Synthesis For Resource-Scarce Languages</h1>
+<p>The following speech samples relate to a paper submitted for review at the <a href=https://www.fair2019.org.za>South African Forum for Artificial Intelligence Research 2019</a></p>
 
 <p>Systems are as follows (as described in the paper),</p>
-<table style="width:100%">
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-lboi{border-color:inherit;text-align:left;vertical-align:middle}
+.tg .tg-g7sd{font-weight:bold;border-color:inherit;text-align:left;vertical-align:middle}
+</style>
+<table class="tg">
   <tr>
-    <td><b>System name</b></td>
-    <td><b>System description</b></td>
+    <th class="tg-lboi"><span style="font-weight:bold">System name</span></th>
+    <th class="tg-g7sd">System description</th>
   </tr>
   <tr>
-    <td>RNN</td>
-    <td>Standard RNN-based SPSS model, using MSE.</td>
+    <td class="tg-g7sd">DNN LPCNet</td>
+    <td class="tg-lboi">Stacked bottleneck feed-forward neural network based voice with LPCNet vocoder</td>
   </tr>
   <tr>
-    <td>MDN</td>
-    <td>MDN with 4 mixture components, using NLL.</td>
+    <td class="tg-g7sd">DNN World</td>
+    <td class="tg-lboi">Stacked bottleneck feed-forward neural network based voice with World vocoder</td>
   </tr>
   <tr>
-    <td>VAE–MEAN</td>
-    <td>VAE decoder using z<sub>MEAN</sub>, i.e. the zero vector.</td>
+    <td class="tg-g7sd">HMM LPCNet</td>
+    <td class="tg-lboi">HTS HMM-based voice with LPCNet vocoder</td>
   </tr>
   <tr>
-    <td>VAE–TAIL</td>
-    <td>VAE decoder using z<sub>TAIL</sub> with r = 3, i.e. points sampled uniformly on the surface of a hyper-sphere with radius 3.</td>
-  </tr>
-  <tr>
-    <td>COPY–SYNTH</td>
-    <td>Natural F0.</td>
-  </tr>
-  <tr>
-    <td>BASELINE</td>
-    <td>A quadratic polynomial fitted to natural F0.</td>
-  </tr>
-  <tr>
-    <td>RNN–SCALED</td>
-    <td>F0 from RNN, scaled vertically by a factor of 3.</td>
+    <td class="tg-g7sd">HMM World</td>
+    <td class="tg-lboi">HTS HMM-based voice with World vocoder</td>
   </tr>
 </table>
 
