@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+## Research
 
-You can use the [editor on GitHub](https://github.com/abylouw/abylouw.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Neural Speech Synthesis For Resource-Scarce Languages (2019)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Recent work in sequence-to-sequence neural networks with attention mechanisms,
+such as the Tacotron 2 and DCTTS architectures, have brought on substantial
+naturalness improvements in synthesised speech. These architectures require
+at least an order of magnitude more data than is generally available in
+resource-scarce language environments. In this paper we propose an efficient
+feed-forward deep neural network (DNN)-based acoustic model, using stacked
+bottleneck features, that together with the recently introduced LPCNet vocoder
+can be used in resource-scarce language environments, with corpora less than 1
+hour in size, to build text-to-speech systems of high perceived naturalness.
+We compare traditional hidden Markov model (HMM)-based acoustic modelling for
+speech synthesis with the proposed architecture using the World and LPCNet
+vocoders, giving both objective and MUSHRA based subjective results, showing
+that the DNN LPCNet combination leads to more natural synthesised speech that
+can be confused with natural speech. The proposed acoustic model provides for
+an efficient implementation, with faster than real time synthesis.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/abylouw/abylouw.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Link to [samples and paper](https://abylouw.github.io/fair2019_samples.html)
